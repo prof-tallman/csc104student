@@ -58,7 +58,7 @@ class DotToDotApp:
 
         # Connect a line from the previous dot to the next dot
         if lines == True and self.last_x != None and self.last_y != None:
-            self.cvs_drawing.create_line(self.last_x, self.last_y, event.x, event.y)
+            self.cvs_drawing.create_line(self.last_x, self.last_y, event.x, event.y, fill='black')
 
         # Update the previous coordinates to be the most recent mouse click
         self.last_x, self.last_y = event.x, event.y
